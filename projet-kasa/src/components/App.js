@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom"
 import Accueil from "./Accueil/Accueil"
 import Info from "./Info/Infos"
 
+
 function App() {
   return (
     <div>

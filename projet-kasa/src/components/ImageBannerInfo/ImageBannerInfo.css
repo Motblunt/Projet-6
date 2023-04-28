@@ -1,0 +1,10 @@
+.container{
+    margin-top: 60px;
+    width: 100px;
+    height: 150px;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("C:\Users\Theoc\Desktop\P6\projet-kasa\src\components\ImageBannerInfo\kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
+    border-radius: 25px;
+}

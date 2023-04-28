@@ -1,6 +1,6 @@
 import "../Banner/Banner.css"
 import LOGO from '../Banner/LOGO.svg'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function Banner() {
     return (
@@ -8,8 +8,8 @@ function Banner() {
             <img className="logo" src={LOGO} alt="" />  
                        
             <ul className="nav-bar">
-                <Link className="items" to="/">Accueil</Link>            
-                <Link className="items" to="/info">A propos</Link> 
+                <NavLink className="active-link" to="/">Accueil</NavLink>            
+                <NavLink className="active-link" to="/info">A propos</NavLink> 
             </ul>            
         </nav>        
      )
