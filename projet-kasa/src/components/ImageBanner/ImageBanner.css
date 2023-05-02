@@ -3,10 +3,9 @@
 
 .slogan {
     margin-top: 60px;
-    padding-inline: 100px;
-    max-height: 190px;    
+    width: 100px;
     height: 150px;
-    min-width: 80%;
+    min-width: 100%;    
     background-image: url("C:\Users\Theoc\Desktop\P6\projet-kasa\src\components\ImageBanner\IMG.png");
     border-radius: 25px;
     background-position: center;
@@ -20,6 +19,5 @@
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: white;
-    
+    color: white;    
 }

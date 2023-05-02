@@ -9,7 +9,7 @@ function Banner() {
                        
             <ul className="nav-bar">
                 <NavLink className="active-link" to="/">Accueil</NavLink>            
-                <NavLink className="active-link" to="/info">A propos</NavLink> 
+                <NavLink className="active-link" to="/about">A propos</NavLink> 
             </ul>            
         </nav>        
      )
