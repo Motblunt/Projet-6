@@ -31,3 +31,7 @@ nav {
 .active-link:hover {
   text-decoration: underline;
 }
+
+.active {
+  text-decoration: underline;
+}

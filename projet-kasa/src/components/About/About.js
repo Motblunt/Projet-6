@@ -1,13 +1,17 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import ImageBannerInfo from '../ImageBannerInfo/ImageBannerInfo';
+import Footer from '../Footer/Footer';
+import Collapse from '../Collapse/Collapse';
 
 const infos = () => {
     return (
         <div>
-            <Banner />
+            <Banner />            
             <ImageBannerInfo />
-            <h1>Ceci est la page à propos</h1>
+            <Collapse />
+            <Footer />
+
         </div>
     );
 };
