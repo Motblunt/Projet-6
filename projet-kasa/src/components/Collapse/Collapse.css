@@ -1,27 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
-h2 {
-  padding-left: 20px;
+.collapsible {
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.accordion {
-  width: 1000px;
-  padding-top: 40px;
-}
-
-.item {
-  background-color: #f6f6f6;
-  margin-bottom: 35px;
-  border-radius: 5px;
-}
-
-.title {
+.collapsible h2 {
   height: 50px;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,22 +17,25 @@ h2 {
   font-size: 24px;
   background-color: #ff6060;
   border-radius: 5px;
-  font-family: "Montserrat", sans-serif;  
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-inline: 20px;
 }
 
-.vector {
-  padding-left: 20px;
-  transform: rotate(180deg);
-  cursor: pointer;
-  transition: transform 500ms;
-}
-
-.content p{
+.collapsible p {
+  background-color: #f6f6f6;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
-  color: #ff6060; 
-  padding: 20px;
-  margin: 0;   
+  color: #ff6060;
+  padding: 25px;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
 }
 
+.collapsible img {
+  transition: transform 0.3s;
+}
 
+.collapsible.expanded img {
+  transform: rotate(180deg);
+}

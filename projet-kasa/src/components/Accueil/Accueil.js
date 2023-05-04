@@ -7,7 +7,7 @@ import Gallery from '../Gallery/Gallery';
 
 const Accueil = () => {
     return (
-        <div>
+        <div >
             <Banner />
             <ImageBanner />
             <Gallery />
