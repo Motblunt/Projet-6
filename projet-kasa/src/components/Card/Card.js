@@ -1,24 +1,37 @@
 import React from 'react';
-import Data from '../data.json'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import cardsData from '../data.json'
 
-function Card() {
+const CardGallery = () => {
+    const [selectedCardId, setSelectedCardId] = useState(null);
+
+    const handleCardClick = (cardId) => {
+        setSelectedCardId(cardId);
+    };
+
+    const getCardIdFromKey = (key) => {
+        return key.replace(/^\D+/g, '');
+    };
+
     return (
         <div className='card-wrapper'>
-            {
-                Data.map(data => {
-                    return (
-                        <div key={data.id} className='gallery'>
-                            <div className='gallery-items' >
-                                <img  src={data.cover} alt="" />
-                                <p className='text-over'>{data.title}</p>
-                            </div>
+            <div className="gallery">
+                {cardsData.map((card) => (
+                    <Link to={`/logement/${card.id}`} key={card.id} className="card">
+                        <div
+                            key={card.id}
+                            className="gallery-items"
+                            onClick={() => handleCardClick(card.id)}
+                        >
+                            <img src={card.cover} alt={card.title} />
+                            <p className='text-over'>{card.title}</p>
                         </div>
-
-                    )
-                })
-            }
+                    </Link>
+                ))}
+            </div>
         </div>
     );
 };
 
-export default Card;
+export default CardGallery;
