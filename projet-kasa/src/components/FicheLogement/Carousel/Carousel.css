@@ -45,4 +45,13 @@
     right: 17%;
     margin-right: 0;
   }
+
+  .carousel__counter {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;    
+  }
   

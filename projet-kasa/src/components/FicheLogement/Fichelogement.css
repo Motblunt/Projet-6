@@ -4,41 +4,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.main-container {
+.flex-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.collapse-display {
+  padding-top: 30px;
   padding-inline: 60px;
-}
-.container-title {
-  color: #ff6060;
-}
-
-.container-title h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-.container-title p {
-  font-size: 18px;
-  margin: 0;  
-}
-
-.container-host {
   display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.container-host img {
-  width: 84px;
-  height: 84px;
-  border-radius: 50px;
-}
-
-.container-host span {
-  color: #ff6060;
-  padding-right: 10px;
-  display: inline-block;
-  width: 90px;
-  font-size: 18px;
+  justify-content: space-between;
 }
