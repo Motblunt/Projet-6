@@ -1,4 +1,14 @@
 .star-rating{
-    padding-top: 20px;
-    padding-right: 60px;
+    padding-top: 20px;       
+}
+
+.star-rating img {
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .star-rating{
+        padding-left: 15px;
+    }
 }

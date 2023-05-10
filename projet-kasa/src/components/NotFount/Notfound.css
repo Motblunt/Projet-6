@@ -30,3 +30,17 @@
     color: #FF6060;  
     text-decoration: underline;    
 }
+
+@media screen and (max-width: 720px) {
+    .display-flex h1 {
+        font-size: 150px;
+    }
+
+    .display-flex h2 {
+        font-size: 20px;
+    }
+
+    .display-flex p {
+        padding-top: 150px;
+    }
+}

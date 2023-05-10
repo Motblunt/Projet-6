@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 60px;
+    padding-inline: 15px;
   }
   .container-title {
     color: #ff6060;
@@ -35,6 +35,18 @@
     display: inline-block;
     width: 90px;
     font-size: 18px;
+  }
+
+  @media screen and (max-width: 720px) {
+
+    .container-host img{
+      width: 60px;
+      height: 60px;
+    }
+
+    .container-host span{
+      font-size: 16px;
+    }
   }
   
   

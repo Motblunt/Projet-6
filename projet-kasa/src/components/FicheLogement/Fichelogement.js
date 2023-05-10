@@ -5,9 +5,10 @@ import Carousel from './Carousel/Carousel';
 import '../FicheLogement/Fichelogement.css';
 import RatingStar from './RatingStar/RatingStar';
 import TagsButton from './TagsButton/TagsButton';
-import HostContainer from './HostContainer/HostContainer';
 import Description from './Description/Description';
 import Equipement from './Equipement/Equipement';
+import Host from './Host/Host';
+import TitleLocation from './TitleLocation/TitleLocation';
 
 const FicheLogement = () => {
   const { cardId } = useParams();
@@ -17,21 +18,27 @@ const FicheLogement = () => {
   return (
     <div>
       <Carousel images={card.pictures} />
-      <HostContainer />
       <div>
-        <div className='flex-container'>
+
+        <div className='div-wrapper'>
+          <div className='title-tags'>
+          <TitleLocation />
           <TagsButton />
-          <RatingStar />
         </div>
+        <div className='flex-container'>
+          <RatingStar />
+          <Host />          
+        </div>
+        </div>        
         <div className='collapse-display'>
           <div>
-            <Description/>
+            <Description />
           </div>
           <div>
-            <Equipement/>
+            <Equipement />
           </div>
-          
-        </div>        
+
+        </div>
       </div>
 
     </div>
