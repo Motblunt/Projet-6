@@ -15,3 +15,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  @media screen and (max-width: 720px) {
+
+    .card-wrapper{
+      background-color: white;
+      margin-top: 25px;
+    }
+
+    .gallery{
+      row-gap: 20px;
+    }
+
+  }

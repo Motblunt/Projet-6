@@ -33,3 +33,20 @@
   padding: 2px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 720px) {
+    
+  .gallery-items{
+    width: 480px;
+    height: 225px;
+    min-width: 100%;
+    padding: 0;    
+  }
+  
+  .text-over {
+    left: 5%;
+    font-size: 16px;
+    top: 78%
+  }
+  
+  }

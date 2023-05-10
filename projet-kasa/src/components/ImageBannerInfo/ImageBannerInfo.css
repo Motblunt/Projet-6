@@ -8,3 +8,11 @@
     background-image: url("C:\Users\Theoc\Desktop\P6\projet-kasa\src\components\ImageBannerInfo\kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
     border-radius: 25px;
 }
+
+@media screen and (max-width: 720px) {
+    .container{
+        min-width: 90%;
+        margin-inline: 30px;
+    }
+    
+}
