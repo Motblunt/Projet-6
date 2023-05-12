@@ -1,24 +1,16 @@
 import React from 'react';
-import cardsData from '../../data.json';
-import { useParams } from 'react-router-dom';
 import GreyStar from "../RatingStar/GreyStar.png"
 import PinkStar from "../RatingStar/PinkStar.png"
 import "../RatingStar/RatingStar.css"
 
 
-
-
-const RatingStar = () => {
-
-    const { cardId } = useParams();
-    const formattedCardId = cardId.includes('_') ? cardId.slice(cardId.indexOf('_') + 1) : cardId;
-    const card = cardsData.find((card) => card.id === formattedCardId);
+const RatingStar = (props) => { 
 
     const maxRating = 5;
     const starWidth = 24;
   
     
-    const numFullStars = Math.floor(card.rating);
+    const numFullStars = Math.floor(props.rating);
     const fullStars = Array(numFullStars).fill().map((_, index) => (
       <img key={`full-star-${index}`} src={PinkStar} alt="Full star" width={starWidth} />
     ));

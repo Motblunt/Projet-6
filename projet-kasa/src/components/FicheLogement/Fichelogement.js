@@ -11,9 +11,8 @@ import Host from './Host/Host';
 import TitleLocation from './TitleLocation/TitleLocation';
 
 const FicheLogement = () => {
-  const { cardId } = useParams();
-  const formattedCardId = cardId.includes('_') ? cardId.slice(cardId.indexOf('_') + 1) : cardId;
-  const card = cardsData.find((card) => card.id === formattedCardId);
+  const { cardId } = useParams(); 
+  const card = cardsData.find((card) => card.id === cardId);
 
   return (
     <div>
@@ -22,20 +21,20 @@ const FicheLogement = () => {
 
         <div className='div-wrapper'>
           <div className='title-tags'>
-          <TitleLocation />
-          <TagsButton />
+          <TitleLocation title={card.title} location={card.location} />
+          <TagsButton tags={card.tags} />
         </div>
         <div className='flex-container'>
-          <RatingStar />
-          <Host />          
+          <RatingStar rating={card.rating} />
+          <Host host={card.host}/>          
         </div>
         </div>        
         <div className='collapse-display'>
           <div>
-            <Description />
+            <Description description={card.description}/>
           </div>
           <div>
-            <Equipement />
+            <Equipement equipments={card.equipments} />
           </div>
 
         </div>

@@ -6,9 +6,8 @@ import Fichelogement from '../FicheLogement/Fichelogement';
 import Banner from '../Banner/Banner';
 
 const CardPage = () => {
-  const { cardId } = useParams();  
-  const formattedCardId = cardId.includes("_") ? cardId.slice(cardId.indexOf("_") + 1) : cardId;
-const card = cardsData.find((card) => card.id === formattedCardId);
+  const { cardId } = useParams();    
+  const card = cardsData.find((card) => card.id === cardId);
 
 
 

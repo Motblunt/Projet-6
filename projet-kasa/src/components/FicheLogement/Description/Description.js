@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import cardsData from '../../data.json';
-import { useParams } from 'react-router-dom';
 import "../Description/Description.css"
 import DownArrow from "../../Collapse/down-arrow.png"
 
-const Description = () => {
-  const { cardId } = useParams();
-  const formattedCardId = cardId.includes('_') ? cardId.slice(cardId.indexOf('_') + 1) : cardId;
-  const card = cardsData.find((card) => card.id === formattedCardId);
+const Description = (props) => {
+
 
   const [isCollapsed, setIsCollapsed] = useState(true);
 
@@ -26,7 +22,7 @@ const Description = () => {
         />
       </div>
       <div className="collapse__content">
-        <p>{card.description}</p>
+        <p>{props.description}</p>
       </div>
     </div>
   );
