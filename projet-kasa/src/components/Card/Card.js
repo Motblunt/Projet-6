@@ -9,10 +9,7 @@ const CardGallery = () => {
     const handleCardClick = (cardId) => {
         setSelectedCardId(cardId);
     };
-
-    const getCardIdFromKey = (key) => {
-        return key.replace(/^\D+/g, '');
-    };
+    
 
     return (
         <div className='card-wrapper'>
@@ -21,7 +18,7 @@ const CardGallery = () => {
                     <Link to={`/logement/${card.id}`} key={card.id} className="card">
                         <div
                             key={card.id}
-                            className="gallery-items"
+                            className={`gallery-items ${selectedCardId === card.id ? 'selected' : ''}`}
                             onClick={() => handleCardClick(card.id)}
                         >
                             <img src={card.cover} alt={card.title} />
@@ -33,5 +30,6 @@ const CardGallery = () => {
         </div>
     );
 };
+
 
 export default CardGallery;

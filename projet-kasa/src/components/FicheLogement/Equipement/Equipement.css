@@ -88,3 +88,10 @@
     transform: rotate(-180deg);
   }
   
+  @media screen and (max-width: 480px){  
+
+    .collapse{
+      width: 400px;
+    }
+
+  }

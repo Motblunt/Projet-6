@@ -21,7 +21,7 @@ function Carousel({ images }) {
         {totalImages > 1 && (
           <img className="carousel__arrow carousel__arrow--left" src={LeftArrow} alt="Previous" onClick={handlePreviousClick} />
         )}
-        <img className="carousel__image" src={images[currentImage]} alt={`Image ${currentImage}`} />
+        <img className="carousel__image" src={images[currentImage]} alt={` ${currentImage}`} />
         {totalImages > 1 && (
           <img className="carousel__arrow carousel__arrow--right" src={RightArrow} alt="Next" onClick={handleNextClick} />
         )}
@@ -30,7 +30,7 @@ function Carousel({ images }) {
             {`${currentImage + 1}/${totalImages}`}
           </div>
         )}
-      </div> 
+      </div>
     </div>
   );
 }
