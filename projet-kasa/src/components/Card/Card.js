@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import cardsData from '../data.json'
+import cardsData from '../Data/data.json'
+import '../../CSS/Card.css'
 
 const CardGallery = () => {
     const [selectedCardId, setSelectedCardId] = useState(null);

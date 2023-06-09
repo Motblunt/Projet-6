@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import cardsData from '../data.json';
-import Notfound from '../NotFount/Notfound';
-import Fichelogement from '../FicheLogement/Fichelogement';
-import Banner from '../Banner/Banner';
+import cardsData from '../components/Data/data.json';
+import Notfound from '../Pages/Notfound';
+import Fichelogement from '../components/FicheLogement/Fichelogement';
+import Banner from '../components/Banner/Banner';
 
 const CardPage = () => {
   const { cardId } = useParams();    

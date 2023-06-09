@@ -1,7 +1,7 @@
 import React from 'react';
-import GreyStar from "../RatingStar/GreyStar.png"
-import PinkStar from "../RatingStar/PinkStar.png"
-import "../RatingStar/RatingStar.css"
+import GreyStar from "../../Images/GreyStar.png"
+import PinkStar from "../../Images/PinkStar.png"
+import "../../CSS/RatingStar.css"
 
 
 const RatingStar = (props) => { 

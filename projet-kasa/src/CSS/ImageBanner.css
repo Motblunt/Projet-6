@@ -6,7 +6,7 @@
     width: 100px;
     height: 150px;
     min-width: 100%;    
-    background-image: url("C:\Users\Theoc\Desktop\P6\projet-kasa\src\components\ImageBanner\IMG.png");
+    background-image: url("../Images/IMG.png");
     border-radius: 25px;
     background-position: center;
     background-size: cover;   

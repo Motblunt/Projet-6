@@ -1,5 +1,5 @@
 import React from 'react';
-import "../TagsButton/TagsButton.css"
+import "../../CSS/TagsButton.css"
 
 
 const TagsButton = (props) => {

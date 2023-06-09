@@ -1,5 +1,5 @@
-import "../Banner/Banner.css"
-import LOGO from '../Banner/LOGO.svg'
+import "../../CSS/Banner.css"
+import LOGO from '../../Images/LOGO.svg'
 import { NavLink } from "react-router-dom"
 
 function Banner() {

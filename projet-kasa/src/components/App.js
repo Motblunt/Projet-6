@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom"
-import Accueil from "./Accueil/Accueil"
-import About from "./About/About"
-import Notfound from "./NotFount/Notfound.js"
-import CardPage from "../components/CardPage/Cardpage.js"
+import Accueil from "../Pages/Accueil"
+import About from "../Pages/About"
+import Notfound from "../Pages/Notfound"
+import CardPage from "../Pages/Cardpage.js"
 
 
 function App() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Banner from '../Banner/Banner';
-import "../NotFount/Notfound.css"
+import Banner from '../components/Banner/Banner';
+import "../CSS/Notfound.css"
 
 const Notfound = () => {
     return (
