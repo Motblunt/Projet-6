@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Projet-6/static/css/main.62e76bd2.css",
-    "main.js": "/Projet-6/static/js/main.149e6c3e.js",
-    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/Projet-6/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.abab3f12f4cb82f1dfa1.png",
-    "static/media/IMG.png": "/Projet-6/static/media/IMG.d00ae7dd3ef927bb988d.png",
-    "static/media/LOGO.svg": "/Projet-6/static/media/LOGO.ac38b36ec692f2f5731bc84c1ac2030e.svg",
-    "index.html": "/Projet-6/index.html",
-    "main.62e76bd2.css.map": "/Projet-6/static/css/main.62e76bd2.css.map",
-    "main.149e6c3e.js.map": "/Projet-6/static/js/main.149e6c3e.js.map"
+    "main.css": "/static/css/main.5250053c.css",
+    "main.js": "/static/js/main.1173a104.js",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.abab3f12f4cb82f1dfa1.png",
+    "static/media/IMG.png": "/static/media/IMG.d00ae7dd3ef927bb988d.png",
+    "static/media/LOGO.svg": "/static/media/LOGO.ac38b36ec692f2f5731bc84c1ac2030e.svg",
+    "index.html": "/index.html",
+    "main.5250053c.css.map": "/static/css/main.5250053c.css.map",
+    "main.1173a104.js.map": "/static/js/main.1173a104.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e76bd2.css",
-    "static/js/main.149e6c3e.js"
+    "static/css/main.5250053c.css",
+    "static/js/main.1173a104.js"
   ]
 }
